@@ -31,8 +31,8 @@ function App() {
     <>
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <div className="profile-card">
+        {/* Profile image input */}
         <div className="profile-image">
-          {/* Profile image input */}
           <input
             type="file"
             accept="image/*"
@@ -65,6 +65,7 @@ function App() {
               placeholder="Your Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
+              className="name-input"
             />
           </div>
           {/* Bio textarea */}
@@ -74,6 +75,7 @@ function App() {
               placeholder="Write a short bio about yourself..."
               value={bio}
               onChange={(e) => setBio(e.target.value)}
+              className="bio-textarea"
             ></textarea>
           </div>
         </div>
